@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateful - AI Meal Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Plateful</h1>
+    <p>Your AI-powered weekly meal planner</p>
+
+    <form id="mealForm">
+      <label for="goal">Health Goal:</label>
+      <select id="goal">
+        <option value="weight_loss">Weight Loss</option>
+        <option value="muscle_gain">Muscle Gain</option>
+        <option value="balanced">Balanced Diet</option>
+      </select>
+
+      <label for="diet">Diet Type:</label>
+      <select id="diet">
+        <option value="regular">Regular</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten_free">Gluten Free</option>
+      </select>
+
+      <button type="submit">Generate Plan</button>
+    </form>
+
+    <div id="output" class="output">
+      <h2>Your Weekly Meal Plan</h2>
+      <div id="plan"></div>
+      <h3>Shopping List</h3>
+      <ul id="shopping"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
